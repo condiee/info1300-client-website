@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Join or Play - Fanclub Collective</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/formselection.js" type="text/javascript"></script>
+  <script src="scripts/gigform.js" type="text/javascript"></script>
+  <script src="scripts/joinform.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <!-- nav bar goes here -->
+  <nav>
+    <ul>
+      <li> <a href="archive.html"> <strong>Archive </strong></a> </li>
+      <li> <a href="tickets.html"> <strong>Upcoming Shows </strong></a> </li>
+      <li> <a href="index.html"> <img id=logo alt="fanclub logo" src="images/logo.jpg"/> </a> </li>
+      <li> <a href="signup.html"> <strong>Join or Play </strong></a> </li>
+      <li> <a href="faq.html"> <strong>FAQ </strong></a> </li>
+    </ul>
+  </nav>
+
+<h1>Join Us or Play a Gig</h1>
+
+<section id="signUp">
+  <div class="formSelector">
+    <button class="formSelect selected" type="button" id="gig"> gig form </button>
+    <button class="formSelect" type="button" id="join"> join Fanclub </button>
+  </div>
+
+  <h3 id="formDescriptionGig"> Apply to Perform a Gig </h3>
+  <h3 id="formDescriptonJoin" class="hidden"> Join Fanclub </h3>
+
+  <!-- form goes here -->
+<form id="gigForm" method="get" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+  <span class="feedback hidden" id="gigError">
+    Oops! There was an error submitting your request. Please fill out all required fields.
+  </span>
+
+  <div>
+    <label for="name"> Name: </label>
+    <input id="name" name="name" placeholder="Avery Smith" required/>
+  </div>
+  <span class="feedback hidden" id="nameError">
+    *Please enter your name.
+  </span>
+
+  <div>
+    <label for="bandName"> Band/Artist Name: </label>
+    <input id="bandName" name="bandName" placeholder="The Cat's Pajamas" required/>
+  </div>
+  <span class="feedback hidden" id="bandNameError">
+    *Please enter your band or artist name.
+  </span>
+  <div>
+    <label for="genre"> Genre: </label>
+    <input id="genre" name="genre" placeholder="Alternative" required/>
+  </div>
+  <span class="feedback hidden" id="genreError">
+      *Please describe your genre.
+  </span>
+  <div>
+    <label for="email"> Contact Email: </label>
+    <input id="email" type="email" name="email" placeholder="band@gmail.com" required/>
+  </div>
+  <span class="feedback hidden" id="emailError">
+    *Please enter a valid email address.
+  </span>
+  <div>
+    <label for="bio"> Bio/Social Media: </label>
+    <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Type or paste links here..."></textarea>
+  </div>
+  <span class="feedback hidden" id="bioError">
+    *Please tell us a little about you.
+  </span>
+  <input class="submitButton" type="submit" value="Submit"/>
+</form>
+
+<!-- form goes here -->
+<form id="joinForm" method="get" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" class="hidden" novalidate>
+  <span class="feedback hidden" id="joinError">
+    Oops! There was an error submitting your requiest. Please fill out all required fields.
+  </span>
+
+  <div>
+    <label for="userName"> Name: </label>
+    <input id="userName" name="name" placeholder="Name" required/>
+  </div>
+  <span class="feedback hidden" id="userNameError">
+    Please enter your name so we know who you are!
+  </span>
+  <div>
+    <label for="userEmail"> Email: </label>
+    <input id="userEmail" name="email" placeholder="person@gmail.com" required/>
+  </div>
+  <span class="feedback hidden" id="userEmailError">
+    Please enter a valid email address so we can contact you.
+  </span>
+  <p>Any specific interests:</p>
+  <section id="checkboxes">
+  <div>
+      <input type="checkbox" id="Door" name="Door">
+      <label for="Door">Door</label>
+  </div>
+    <div>
+        <input type="checkbox" id="Technical" name="Technical">
+        <label for="Technical">Technical</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Marketing" name="Marketing">
+        <label for="Marketing">Marketing</label>
+    </div>
+    <div>
+        <input type="checkbox" id="PosterDesign" name="PosterDesign">
+        <label for="PosterDesign">Poster Design</label>
+    </div>
+    <div>
+        <input type="checkbox" id="ArtistRecruitment" name="ArtistRecruitment">
+        <label for="ArtistRecruitment">Artist Recruitment</label>
+    </div>
+</section>
+  <input class="submitButton" type="submit" value="Submit"/>
+
+</form>
+
+</section>
+
+<section id="members">
+  <h1> Fanclub E-board </h1>
+  <div id="eboard">
+    <figure class="eboard">
+      <img src="images/amber.jpg" alt="Amber, President"/>
+      <p> Amber –– President (at732, she/her/hers)</p>
+    </figure>
+    <figure class="eboard">
+      <img src="images/izzy.jpg" alt="Izzy, Vice President"/>
+      <p> Izzy –– Vice President (ip75, he/him/his or they/them/theirs) </p>
+    </figure>
+    <figure class="eboard">
+        <img src="images/bryan.jpg" alt="Bryan, Treasurer"/>
+        <p> Bryan –– Treasurer (bl637, he/him/his)</p>
+    </figure>
+    <figure class="eboard">
+      <img src="images/stephen.jpg" alt="Stephen, Event Coordinator"/>
+      <p> Stephen –– Event Coordinator (sy364, he/him/his)</p>
+    </figure>
+    <figure class="eboard">
+      <img src="images/nicholas.jpg" alt="Nicholas, Photographer"/>
+      <p> Nicholas –– Photographer (nar73, he/him/his) </p>
+    </figure>
+</div>
+</section>
+
+  <footer>
+      <p>Contact us at <em>fanclub.collective.ithaca@gmail.com.</em></p>
+      <p>Like us on <a href="https://www.facebook.com/FanclubCollective/">Facebook</a> to find photos from recent shows and hear first about our upcoming events.</p>
+      <p>Follow us on the <a href="https://www.instagram.com/fanclubcollective/">gram</a>!
+  </footer>
+
+</body>
+</html>

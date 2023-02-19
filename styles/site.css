@@ -1,0 +1,767 @@
+
+body {
+  margin: 0;
+}
+
+/* NAV BAR */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  font-size: 120%;
+  width: 80%;
+  height: 40px;
+  margin: 25px auto;
+  color: #67469e;
+  background-color: transparent;
+  padding: 0px;
+}
+nav ul li {
+  flex-basis: 15%;
+  flex-grow: 1;
+  margin: auto 0;
+}
+nav ul li a {
+  text-decoration: none;
+  font-variant: small-caps;
+  margin: auto auto;
+}
+
+#logo {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+
+
+/* SIGNUP PAGE */
+
+h2 {
+  text-align: center;
+  width: auto;
+  margin: 35px auto;
+  font-variant: small-caps;
+  padding-top: 2px;
+  color: black;
+  font-size: 150%;
+}
+
+.formSelector {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.formSelect {
+  text-align: center;
+  margin: 0 20px;
+  font-size: 120%;
+  box-shadow: 3px 3px 3px black;
+}
+.formSelect:active {
+  color: inherit;
+  background-color: #eeeeee;
+  box-shadow: 1px 1px 1px black;
+}
+.selected {
+  box-shadow: inset 1px 1px 1px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+.eboard {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 120%;
+}
+form div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+}
+form div label {
+  text-align: right;
+  flex: 30%;
+  margin-right: 5px;
+}
+form p {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 0;
+    width: 47%;
+}
+form div input {
+  text-align: left;
+  flex: 70%;
+  max-width: 200px;
+}
+form div textarea {
+  text-align: left;
+  flex: 70%;
+  max-width: 200px;
+}
+#checkboxes {
+  padding: 0px;
+  max-width: 200px;
+  font-size: 100%;
+  margin-left: 120px;
+  margin-top: 0px;
+}
+
+#checkboxes div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+#checkboxes div label {
+  text-align: left;
+  flex: 90%;
+}
+
+#checkboxes div input {
+    text-align: right;
+    flex: 10%;
+}
+
+.submitButton {
+  margin-top: 5px;
+  margin-left: 90%;
+  font-size: 110%;
+}
+
+.feedback {
+  color: #912438;
+  font-size: 90%;
+  font-variant: small-caps;
+  margin-left: 20%;
+}
+
+#eboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#eboard div {
+  flex: 25%;
+}
+#eboard p {
+  text-align: center;
+}
+#eboard img {
+  max-width: 400px;
+}
+
+/* ARCHIVE PAGE */
+
+.search{
+    padding: 20px;
+}
+
+.sort{
+    padding: 20px;
+}
+
+section{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+cite {
+    font-size: 80%;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+em {
+    color: #573270;
+}
+
+#filter{
+    display: flex;
+    flex-direction: column;
+}
+
+#filter div {
+  margin: 0px;
+  padding: 0px;
+}
+
+#filter label {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+
+.showImage {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+#shows ul {
+    text-decoration: none;
+    font-size: 150%;
+    text-shadow: 1px 1px 2px #573270;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#shows ul li {
+    padding: 20px;
+    color: black;
+    background-color: #eeeeee;
+    margin: 30px 60px;
+}
+#shows ul li img {
+    margin-top: 20px;
+}
+
+#shows ul p{
+    font-weight: lighter;
+    font-size: 100%;
+    text-shadow: none;
+    color: black;
+}
+
+/* HOME PAGE */
+
+#homelogo {
+  display: block;
+  margin: 110px auto 90px auto;
+  width: 70%;
+}
+
+/* HOME PAGE SPECIAL NAV BAR*/
+#homenav ul {
+  color: inherit;
+  background-color: transparent;
+  margin-top: 0;
+}
+
+#homenav ul li a {
+  color: #573270;
+  font-size: 130%;
+}
+
+#clubinfo {
+  width: 75%;
+  margin: 50px auto;
+  font-size: 170%;
+  color: black;
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+  margin: 1em auto;
+  font-size: 1.5em;
+  color: black;
+}
+
+.announcementSelect {
+  text-align: center;
+  border-color: #573270;
+  background-color: white;
+  margin: 0 20px;
+  padding: 5px 20px;
+  font-size: 120%;
+  color: black;
+  box-shadow: 3px 3px 3px #573270;
+}
+
+.announcementSelect:active {
+  color: black;
+  background-color: #eeeeee;
+  box-shadow: 1px 1px 1px #573270;
+}
+
+.announcementSelected {
+  box-shadow: inset 1px 1px 1px;
+  background-color: #eeeeee;
+  color: black;
+}
+
+.bulletin {
+  background-color: #eeeeee;
+  width: 80%;
+  border-style: ridge;
+  border-color: #573270;
+  border-width: 8px;
+  margin: 30px auto;
+  padding: 5px;
+}
+
+.bulletininfo {
+  font-size: 2em;
+  padding: 15px 60px;
+  font-family: monospace;
+}
+
+#slideshowImage {
+  display: block;
+  margin: 30px auto;
+  height: 400px;
+  border-style: ridge;
+  border-color: #573270;
+  border-width: 8px;
+  padding: 10px;
+}
+
+.slideshowButtonHolder {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.slideshowButton {
+  font-size:1.2em;
+  margin: auto;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  border: 2px #573270 solid;
+  cursor: pointer;
+  color: #573270;
+}
+
+.slideshowButton:hover {
+  background-color: #573270;
+  color: white;
+}
+
+.citation {
+  text-align: center;
+}
+
+/* NEXT SHOWS PAGE CSS */
+.rowone{
+  display: flex;
+  flex-flow: column;
+}
+.colone{
+  display: flex;
+  flex-flow: row;
+  margin-left: 50px;
+}
+.description{
+  flex-grow: 1;
+}
+
+.description2 {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.colone p {
+  padding: 2px;
+  font-size: 130%;
+  text-align: center;
+}
+
+.button{
+ background-color: #573270;
+ display: inline-block;
+ border: none;
+ font-size: 20px;
+ color: #eeeeee;
+ padding: 20px;
+ text-align: center;
+}
+
+#eventDescription{
+  text-align : justify;
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 90px;
+  text-shadow: 1px 1px 2px #67469e;
+}
+
+#nextshows h3 {
+    font-variant: small-caps;
+    font-size: 200%;
+  }
+
+  /*
+.circles{
+  display: flex;
+  flex-flow: row;
+  padding-left: 140px;
+}
+
+.timeD{
+  font-size: 19px;
+  width: 150px;
+  height: 100px;
+  background: #d9d8da;
+  color: #674693;
+  line-height: 100px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.locationD{
+
+  font-size: 19px;
+  width: 150px;
+  height: 100px;
+  background:#d9d8da;
+  color: #674693;
+  line-height: 100px;
+  text-align: center;
+  margin-left: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+*/
+
+/* FAQ CSS */
+.faqdl{
+  text-align: center;
+}
+
+.faqdl dd{
+  text-align: center;
+}
+.faqbutton{
+  background-color: lightgrey;
+  color: black;
+  font-size: 20px;
+  width: 80%;
+  margin: 15px 0;
+  font-variant: normal;
+}
+
+.faqbutton:hover {
+  background-color: #bda9cb;
+}
+
+#FeedbackForm label {
+  text-align: right;
+}
+
+#FeedbackForm input {
+  text-align: left;
+}
+
+.submitButt {
+    margin-left: 90%;
+    margin-top: 3px;
+    font-size: 101%;
+}
+
+/* GENERAL SITE CSS */
+h1{
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 200%;
+  border-bottom: 2px solid black;
+  width: 100%;
+  margin: auto;
+  color: black;
+}
+
+button {
+    font-family: serif;
+    font-variant: small-caps;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* FOOTER */
+footer {
+  border-top: #67469e solid 10px;
+  margin-top: 50px;
+  background-color: black;
+  padding: 10px;
+  color: lightgrey;
+  font-size: 130%;
+  text-align: center;
+}
+
+footer a {
+    color: #67469e;
+}
+
+footer em {
+    color: #67469e;
+}
+
+/* SHRINK DESIGN */
+@media (max-width: 1100px) {
+    .colone {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 45px;
+    }
+    .colone img {
+      width: 100%;
+    }
+
+    #slideshowImage {
+        height: 300px;
+
+    }
+
+    nav ul {
+        font-size: 90%;
+    }
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 130%;
+  }
+
+  /* NAV BAR */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    font-size: 65%;
+    width: 80%;
+    height: 40px;
+    margin: 15px auto;
+    color: #67469e;
+    background-color: transparent;
+    padding: 0px;
+  }
+  nav ul li {
+    flex-basis: 15%;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-variant: small-caps;
+    margin: auto auto;
+  }
+
+  #logo {
+    width: 80%;
+    display: flex;
+    margin: auto;
+  }
+
+  .faqbutton {
+    font-size: 130%;
+  }
+  input, textarea {
+    font-size: 130%;
+  }
+  #shows ul {
+    margin-left: 0;
+  }
+  #showList li {
+    width: 100%;
+    margin-left: 0;
+  }
+  .showImage {
+    width: 90%;
+  }
+  #shows ul li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submitButton {
+    font-size: 120% !important;
+    width: 90px;
+  }
+
+  h2 {
+    width: 85%;
+    font-size: 120%;
+    color: #573270;
+  }
+
+  .formSelector {
+    max-width: 80%;
+  }
+
+  /* HOME PAGE MOBILE DESIGN */
+
+  #homelogo {
+    width: 90%;
+  }
+
+  section{
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  /* HOME PAGE SPECIAL NAV BAR*/
+  #homenav ul {
+    color: inherit;
+    background-color: transparent;
+    margin-top: 0;
+  }
+
+  #homenav ul li a {
+    color: black;
+    font-size: 100%;
+    color: #573270;
+    font-size: 115%;
+
+  }
+
+  #clubinfo {
+    width: 90%;
+    font-size: 90%;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    padding: 0px 5px;
+  }
+
+  .announcementSelect {
+    margin: 0 10px;
+    padding: 5px 15px;
+    font-size: 80%;
+  }
+
+  .bulletin {
+    width: 90%;
+  }
+
+  .bulletininfo {
+    font-size: .9em;
+    padding: 10px 30px;
+  }
+
+  #slideshowImage {
+    height: 170px;
+  }
+
+  .slideshowButton {
+    font-size: .8em;
+    width: 90px;
+  }
+
+/* Upcoming shows */
+/*
+.circles{
+  display: flex;
+  flex-flow: column;
+  padding-left: 100px;
+}
+
+.timeD{
+  font-size: 19px;
+  width: 150px;
+  height: 100px;
+  background: #d9d8da;
+  color: #674693;
+  line-height: 100px;
+  text-align: center;
+  padding-left: 0px;
+  margin-bottom: 40px;
+  margin-left: -40px;
+   padding-right: 10px;
+}
+.locationD{
+  font-size: 19px;
+  width: 150px;
+  height: 100px;
+  background: #d9d8da;
+  color: #674693;
+  line-height: 100px;
+  text-align: center;
+  margin-left: -40px;
+  padding-left: 0px;
+  padding-right: 10px;
+  } */
+
+.button{
+ display: inline-block;
+ border: none;
+ font-size: 20px;
+ padding: 20px;
+ text-align: center;
+}
+
+h1{
+text-align: center;
+font-variant: small-caps;
+font-size: 100%;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+width: 80%;
+margin: auto;
+}
+#eventDescription{
+  text-align : left;
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 60px;
+  margin-right: 90px;
+  text-shadow: 1px 1px 2px #67469e;
+}
+footer em{
+  font-size: 80%;
+}
+/* FAQ mobile */
+  #FeedbackForm label {
+    text-align: right;
+    font-size: 70%;
+  }
+
+  #FeedbackForm input {
+    text-align: left;
+    font-size: 70%;
+  }
+
+  .submitButt {
+      margin-left: 70%;
+      margin-top: 3px;
+      margin-right: 50%;
+      font-size: 101%;
+  }
+/* Archive Mobile */
+#filter {
+    font-size: 80%;
+    text-align: left;
+}
+
+.search {
+    font-size: 100%;
+}
+
+.sort select{
+    font-size: 130%;
+}
+
+#shows ul {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+}
